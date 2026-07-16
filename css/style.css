@@ -1378,13 +1378,12 @@ img {
 .tech-item:hover {
   transform: translateY(-6px);
   border-color: var(--tech-color);
-  box-shadow: 0 8px 30px rgba(var(--tech-color), 0.1);
+  box-shadow: 0 0 30px var(--tech-color);
 }
 
 .tech-logo {
   font-size: 2rem;
   color: var(--tech-color);
-  filter: drop-shadow(0 0 20px rgba(var(--tech-color), 0.2));
 }
 
 .tech-item span {
@@ -1834,7 +1833,7 @@ img {
   background: rgba(255,101,132,0.1);
 }
 
-/* ===== Footer ===== */
+
 .footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
