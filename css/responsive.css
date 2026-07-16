@@ -3,7 +3,8 @@
 /* === 1200px === */
 @media (max-width: 1200px) {
   .tech-grid { grid-template-columns: repeat(6, 1fr); }
-  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(3, 1fr); }
+  .brands-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
