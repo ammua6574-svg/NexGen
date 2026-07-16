@@ -1,4 +1,4 @@
-/* ===== Scroll Animation (AOS-like) ===== */
+
 class ScrollAnimator {
   constructor() {
     this.animatedElements = document.querySelectorAll('[data-aos]');
@@ -45,7 +45,7 @@ class ScrollAnimator {
   }
 }
 
-/* ===== Typewriter Effect ===== */
+
 class Typewriter {
   constructor(elementId, words, options = {}) {
     this.element = document.getElementById(elementId);
@@ -92,7 +92,7 @@ class Typewriter {
   }
 }
 
-/* ===== Parallax Effect ===== */
+
 class Parallax {
   constructor() {
     this.shapes = document.querySelectorAll('.shape');
@@ -112,7 +112,7 @@ class Parallax {
   }
 }
 
-/* ===== Animated Counter ===== */
+
 class Counter {
   constructor() {
     this.counters = document.querySelectorAll('.stat-number');
@@ -169,7 +169,7 @@ class Counter {
   }
 }
 
-/* ===== 3D Tilt Effect ===== */
+
 class TiltEffect {
   constructor() {
     this.cards = document.querySelectorAll('[data-tilt]');
@@ -198,7 +198,7 @@ class TiltEffect {
   }
 }
 
-/* ===== Initialize All Animations ===== */
+
 document.addEventListener('DOMContentLoaded', () => {
   window.scrollAnimator = new ScrollAnimator();
   window.typewriter = new Typewriter('typingText', [

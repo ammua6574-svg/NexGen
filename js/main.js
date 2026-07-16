@@ -35,7 +35,7 @@ class App {
     }, 3000);
   }
 
-  /* ===== Custom Cursor ===== */
+  
   initCustomCursor() {
     const dot = document.querySelector('.cursor-dot');
     const ring = document.querySelector('.cursor-ring');
@@ -84,7 +84,7 @@ class App {
     });
   }
 
-  /* ===== Navigation ===== */
+  
   initNavigation() {
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
@@ -121,7 +121,7 @@ class App {
     });
   }
 
-  /* ===== Theme Toggle ===== */
+  
   initThemeToggle() {
     const toggle = document.getElementById('themeToggle');
     if (!toggle) return;
@@ -141,7 +141,7 @@ class App {
     });
   }
 
-  /* ===== Portfolio Filter ===== */
+  
   initPortfolioFilter() {
     const filters = document.querySelectorAll('.filter-btn');
     const items = document.querySelectorAll('.portfolio-item');
@@ -166,7 +166,7 @@ class App {
     });
   }
 
-  /* ===== Testimonial Carousel ===== */
+  
   initTestimonialCarousel() {
     const track = document.getElementById('testimonialTrack');
     const prevBtn = document.getElementById('prevBtn');
@@ -221,7 +221,7 @@ class App {
     startAutoSlide();
   }
 
-  /* ===== Contact Form ===== */
+  
   initContactForm() {
     const form = document.getElementById('contactForm');
     const status = document.getElementById('formStatus');
@@ -283,7 +283,7 @@ class App {
     });
   }
 
-  /* ===== Back to Top ===== */
+  
   initBackToTop() {
     const btn = document.getElementById('backToTop');
     if (!btn) return;
@@ -297,7 +297,7 @@ class App {
     });
   }
 
-  /* ===== Smooth Scroll ===== */
+  
   initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener('click', (e) => {
@@ -314,7 +314,7 @@ class App {
     });
   }
 
-  /* ===== Active Nav Link on Scroll ===== */
+  
   initActiveNavLink() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -340,7 +340,7 @@ class App {
     sections.forEach((section) => observer.observe(section));
   }
 
-  /* ===== Newsletter Form ===== */
+  
   initNewsletterForm() {
     const forms = document.querySelectorAll('.newsletter-form');
     forms.forEach((form) => {
@@ -359,7 +359,7 @@ class App {
   }
 }
 
-/* ===== Initialize Particles ===== */
+
 const initParticles = () => {
   const canvas = document.getElementById('particleCanvas');
   if (canvas) {
@@ -367,19 +367,18 @@ const initParticles = () => {
   }
 };
 
-/* ===== Initialize Particles After DOM ===== */
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initParticles);
 } else {
   initParticles();
 }
 
-/* ===== Initialize App ===== */
+
 document.addEventListener('DOMContentLoaded', () => {
   window.app = new App();
 });
 
-/* ===== Handle Resize Events ===== */
+
 window.addEventListener('resize', () => {
   if (window.particleNetwork) {
     window.particleNetwork.resize();

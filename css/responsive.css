@@ -103,7 +103,7 @@
   }
 }
 
-/* === 576px === */
+
 @media (max-width: 576px) {
   .container { padding: 0 16px; }
   
@@ -157,7 +157,7 @@
   .scroll-indicator { display: none; }
 }
 
-/* === 400px === */
+
 @media (max-width: 400px) {
   .hero-title { font-size: 1.5rem; }
   .section-title { font-size: 1.3rem; }
@@ -166,7 +166,7 @@
   .nav-menu { width: 100%; }
 }
 
-/* ===== Print Styles ===== */
+
 @media print {
   .navbar, .preloader, .cursor-dot, .cursor-ring, 
   .scroll-indicator, .back-to-top, .hero-video-bg,
