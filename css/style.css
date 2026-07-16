@@ -133,6 +133,7 @@ img {
   font-weight: 900;
   background: var(--gradient-1);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
   animation: pulse-logo 1.5s ease-in-out infinite;
@@ -595,6 +596,7 @@ img {
   background: linear-gradient(90deg, #6C63FF, #00D2FF, #FF6584, #FFB347, #00ff88, #6C63FF);
   background-size: 300% 100%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow-shift 4s linear infinite;
 }
@@ -718,6 +720,7 @@ img {
   font-weight: 900;
   background: var(--gradient-1);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
