@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexGen IT Solutions - Enterprise-grade technology services, digital transformation, and innovative software solutions">
+  <title>NexGen IT Solutions | Enterprise Technology</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="loader-content">
+      <div class="loader-logo">N</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#9670;</span>
+        <span class="logo-text">NexGen<span class="logo-accent">IT</span></span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#team" class="nav-link">Team</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="toggle-sun">&#9788;</span>
+          <span class="toggle-moon">&#9790;</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Animated Mesh Gradient Background -->
+    <div class="hero-mesh-bg">
+      <div class="mesh-gradient"></div>
+      <div class="mesh-gradient mesh-2"></div>
+      <div class="mesh-gradient mesh-3"></div>
+    </div>
+    <!-- Video Background -->
+    <div class="hero-video-bg">
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920">
+        <source src="https://cdn.coverr.co/videos/coverr-connecting-the-world-through-technology-5252/1080p.mp4" type="video/mp4">
+        <source src="https://cdn.pixabay.com/video/2023/10/19/185631-876210585_large.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+    <!-- Colorful Floating Orbs -->
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="orb orb-4"></div>
+      <div class="orb orb-5"></div>
+    </div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="container hero-container">
+      <div class="hero-badge" data-aos="fade-up">
+        <span class="badge-dot"></span>
+        <span class="badge-pulse"></span>
+        Innovating the Future of Technology
+      </div>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+        We Build <span class="gradient-text gradient-rainbow" id="typingText"></span><span class="cursor-blink">|</span>
+      </h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+        Enterprise-grade digital solutions that transform businesses. From AI-powered platforms to cloud infrastructure, we engineer tomorrow's technology today.
+      </p>
+      <div class="hero-showcase" data-aos="fade-up" data-aos-delay="250">
+        <div class="showcase-item">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&q=80" alt="Dashboard" loading="lazy">
+          <span>Analytics</span>
+        </div>
+        <div class="showcase-item">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80" alt="AI" loading="lazy">
+          <span>AI/ML</span>
+        </div>
+        <div class="showcase-item">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&q=80" alt="Cloud" loading="lazy">
+          <span>Cloud</span>
+        </div>
+        <div class="showcase-item">
+          <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=200&q=80" alt="Mobile" loading="lazy">
+          <span>Mobile</span>
+        </div>
+      </div>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+        <a href="#contact" class="btn btn-primary btn-glow">Start Your Project</a>
+        <a href="#portfolio" class="btn btn-outline btn-gradient-border">View Our Work</a>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+        <div class="stat-item">
+          <span class="stat-number" data-count="150">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Expert Engineers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="98">0</span><span class="stat-percent">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="12">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">About Us</span>
+        <h2 class="section-title">Engineering Digital <span class="gradient-text">Excellence</span></h2>
+        <p class="section-desc">We are a team of passionate technologists dedicated to crafting solutions that drive business growth and innovation.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-content" data-aos="fade-right">
+          <div class="about-text">
+            <p>At NexGen IT, we combine cutting-edge technology with strategic thinking to deliver solutions that make a real impact. Founded in 2014, we've grown from a small startup to a trusted technology partner for enterprises worldwide.</p>
+            <p>Our team of 50+ engineers, designers, and strategists work collaboratively to solve complex challenges across industries including healthcare, finance, e-commerce, and education.</p>
+          </div>
+          <div class="about-features">
+            <div class="a-feature">
+              <div class="a-feature-icon">&#9733;</div>
+              <div><strong>Innovation First</strong><br><small>Always pushing boundaries</small></div>
+            </div>
+            <div class="a-feature">
+              <div class="a-feature-icon">&#9881;</div>
+              <div><strong>Agile Delivery</strong><br><small>Fast, iterative development</small></div>
+            </div>
+            <div class="a-feature">
+              <div class="a-feature-icon">&#9829;</div>
+              <div><strong>Client-Centric</strong><br><small>Your success is our mission</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual" data-aos="fade-left">
+          <div class="about-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Our team collaborating in modern office" class="about-main-img" loading="lazy">
+            <div class="about-exp-badge">
+              <span class="exp-number">12+</span>
+              <span class="exp-label">Years of Innovation</span>
+            </div>
+            <div class="about-award-badge">
+              <span class="award-icon">&#9733;</span>
+              <span class="award-text">Top IT Firm 2026</span>
+            </div>
+          </div>
+          <div class="about-card floating">
+            <div class="a-card-inner">
+              <div class="a-card-icon">&#128187;</div>
+              <div>
+                <strong>Full-Stack Development</strong>
+                <div class="a-progress"><span style="width:95%"></span></div>
+              </div>
+            </div>
+            <div class="a-card-inner">
+              <div class="a-card-icon">&#9729;</div>
+              <div>
+                <strong>Cloud & DevOps</strong>
+                <div class="a-progress"><span style="width:92%"></span></div>
+              </div>
+            </div>
+            <div class="a-card-inner">
+              <div class="a-card-icon">&#9889;</div>
+              <div>
+                <strong>AI & Machine Learning</strong>
+                <div class="a-progress"><span style="width:88%"></span></div>
+              </div>
+            </div>
+            <div class="a-card-inner">
+              <div class="a-card-icon">&#128301;</div>
+              <div>
+                <strong>UI/UX Design</strong>
+                <div class="a-progress"><span style="width:94%"></span></div>
+              </div>
+            </div>
+            <div class="a-card-inner">
+              <div class="a-card-icon">&#128274;</div>
+              <div>
+                <strong>Cybersecurity</strong>
+                <div class="a-progress"><span style="width:85%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Comprehensive <span class="gradient-text">IT Services</span></h2>
+        <p class="section-desc">End-to-end technology solutions tailored to your business needs, powered by the latest innovations.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-tilt>
+          <div class="service-icon-wrapper">
+            <div class="service-icon">&#128187;</div>
+          </div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">Responsive, high-performance web applications built with modern frameworks and best practices.</p>
+          <a href="#" class="service-link">Learn More &rarr;</a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100" data-tilt>
+          <div class="service-icon-wrapper">
+            <div class="service-icon">&#128241;</div>
+          </div>
+          <h3 class="service-title">Mobile Apps</h3>
+          <p class="service-desc">Native and cross-platform mobile applications delivering seamless user experiences.</p>
+          <a href="#" class="service-link">Learn More &rarr;</a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200" data-tilt>
+          <div class="service-icon-wrapper">
+            <div class="service-icon">&#9729;</div>
+          </div>
+          <h3 class="service-title">Cloud Solutions</h3>
+          <p class="service-desc">Scalable cloud infrastructure, migration, and management across AWS, Azure, and GCP.</p>
+          <a href="#" class="service-link">Learn More &rarr;</a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-tilt>
+          <div class="service-icon-wrapper">
+            <div class="service-icon">&#9889;</div>
+          </div>
+          <h3 class="service-title">AI & Automation</h3>
+          <p class="service-desc">Intelligent automation solutions powered by machine learning and advanced analytics.</p>
+          <a href="#" class="service-link">Learn More &rarr;</a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100" data-tilt>
+          <div class="service-icon-wrapper">
+            <div class="service-icon">&#128274;</div>
+          </div>
+          <h3 class="service-title">Cybersecurity</h3>
+          <p class="service-desc">Comprehensive security audits, penetration testing, and real-time threat monitoring.</p>
+          <a href="#" class="service-link">Learn More &rarr;</a>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200" data-tilt>
+          <div class="service-icon-wrapper">
+            <div class="service-icon">&#128202;</div>
+          </div>
+          <h3 class="service-title">Data Analytics</h3>
+          <p class="service-desc">Transform raw data into actionable insights with custom analytics and visualization dashboards.</p>
+          <a href="#" class="service-link">Learn More &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Our Team</span>
+        <h2 class="section-title">Meet the <span class="gradient-text">Innovators</span></h2>
+        <p class="section-desc">Talented professionals driving digital transformation across the globe.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card" data-aos="fade-up">
+          <div class="team-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Alex Mitchell - CEO & Founder" loading="lazy">
+            <div class="team-socials">
+              <a href="#" class="ts-link">in</a>
+              <a href="#" class="ts-link">X</a>
+              <a href="#" class="ts-link">GH</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Alex Mitchell</h3>
+            <span class="team-role">CEO & Founder</span>
+            <p class="team-bio">Visionary leader with 18+ years in enterprise technology and digital strategy.</p>
+          </div>
+        </div>
+        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Sarah Williams - CTO" loading="lazy">
+            <div class="team-socials">
+              <a href="#" class="ts-link">in</a>
+              <a href="#" class="ts-link">X</a>
+              <a href="#" class="ts-link">GH</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Sarah Williams</h3>
+            <span class="team-role">Chief Technology Officer</span>
+            <p class="team-bio">AI/ML expert driving technical innovation and architecture decisions.</p>
+          </div>
+        </div>
+        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="David Park - Head of Engineering" loading="lazy">
+            <div class="team-socials">
+              <a href="#" class="ts-link">in</a>
+              <a href="#" class="ts-link">X</a>
+              <a href="#" class="ts-link">GH</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">David Park</h3>
+            <span class="team-role">Head of Engineering</span>
+            <p class="team-bio">Full-stack architect leading 50+ engineers across global delivery teams.</p>
+          </div>
+        </div>
+        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Emily Chen - Design Director" loading="lazy">
+            <div class="team-socials">
+              <a href="#" class="ts-link">in</a>
+              <a href="#" class="ts-link">X</a>
+              <a href="#" class="ts-link">GH</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Emily Chen</h3>
+            <span class="team-role">Design Director</span>
+            <p class="team-bio">Award-winning UX designer crafting intuitive, human-centered interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">Showcasing our finest work across various industries and technologies.</p>
+      </div>
+      <div class="portfolio-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="ai">AI/ML</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="web">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="E-Commerce Platform" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h4>E-Commerce Platform</h4>
+                <p>React, Node.js, MongoDB</p>
+                <a href="#" class="portfolio-link">&#8599;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="mobile">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="HealthTrack Mobile App" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h4>HealthTrack App</h4>
+                <p>Flutter, Firebase, AI</p>
+                <a href="#" class="portfolio-link">&#8599;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="ai">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="AI Analytics Dashboard" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h4>AI Analytics Dashboard</h4>
+                <p>Python, TensorFlow, D3.js</p>
+                <a href="#" class="portfolio-link">&#8599;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="cloud">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80" alt="Cloud Migration Suite" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h4>Cloud Migration Suite</h4>
+                <p>AWS, Docker, Kubernetes</p>
+                <a href="#" class="portfolio-link">&#8599;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="web">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1553729459-afe8f2e2ed27?w=600&q=80" alt="SaaS CRM Platform" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h4>SaaS CRM Platform</h4>
+                <p>Vue.js, Django, PostgreSQL</p>
+                <a href="#" class="portfolio-link">&#8599;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="mobile">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&q=80" alt="StreamFlow Media App" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="portfolio-info">
+                <h4>StreamFlow Media</h4>
+                <p>React Native, GraphQL</p>
+                <a href="#" class="portfolio-link">&#8599;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="section tech" id="tech">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Technology</span>
+        <h2 class="section-title">Our <span class="gradient-text">Tech Stack</span></h2>
+        <p class="section-desc">We work with the latest and most reliable technologies to deliver exceptional results.</p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-item" data-aos="fade-up"><div class="tech-logo" style="--tech-color: #61dafb;">&#9881;</div><span>React</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="50"><div class="tech-logo" style="--tech-color: #339933;">&#9881;</div><span>Node.js</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="100"><div class="tech-logo" style="--tech-color: #f7df1e;">&#9881;</div><span>JavaScript</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="150"><div class="tech-logo" style="--tech-color: #3178c6;">&#9881;</div><span>TypeScript</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="200"><div class="tech-logo" style="--tech-color: #336791;">&#9881;</div><span>Python</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="250"><div class="tech-logo" style="--tech-color: #f05032;">&#9881;</div><span>Git</span></div>
+        <div class="tech-item" data-aos="fade-up"><div class="tech-logo" style="--tech-color: #ff9900;">&#9729;</div><span>AWS</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="50"><div class="tech-logo" style="--tech-color: #326ce5;">&#9729;</div><span>Azure</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="100"><div class="tech-logo" style="--tech-color: #4285f4;">&#9729;</div><span>GCP</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="150"><div class="tech-logo" style="--tech-color: #2496ed;">&#9881;</div><span>Docker</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="200"><div class="tech-logo" style="--tech-color: #326ce5;">&#9881;</div><span>Kubernetes</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="250"><div class="tech-logo" style="--tech-color: #47a248;">&#9881;</div><span>MongoDB</span></div>
+        <div class="tech-item" data-aos="fade-up"><div class="tech-logo" style="--tech-color: #336791;">&#128202;</div><span>PostgreSQL</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="50"><div class="tech-logo" style="--tech-color: #e34f26;">&#9881;</div><span>HTML5</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="100"><div class="tech-logo" style="--tech-color: #1572b6;">&#9881;</div><span>CSS3</span></div>
+        <div class="tech-item" data-aos="fade-up" data-aos-delay="150"><div class="tech-logo" style="--tech-color: #764abc;">&#9881;</div><span>GraphQL</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+        <p class="section-desc">Hear from the businesses we've helped transform.</p>
+      </div>
+      <div class="testimonial-carousel" data-aos="fade-up">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">"NexGen IT transformed our digital infrastructure completely. Their team's expertise in cloud migration saved us 40% in operational costs while improving performance significantly."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Sarah Chen" class="author-img" loading="lazy">
+              <div>
+                <strong>Sarah Chen</strong>
+                <small>CTO, FinTech Corp</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">"The AI-powered analytics platform they built for us revolutionized how we understand our customers. The insights we've gained have directly contributed to a 25% increase in revenue."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Marcus Johnson" class="author-img" loading="lazy">
+              <div>
+                <strong>Marcus Johnson</strong>
+                <small>CEO, DataDriven Inc</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">"Working with NexGen was a game-changer. Their agile methodology and transparent communication made the entire development process smooth and predictable."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Emily Rodriguez" class="author-img" loading="lazy">
+              <div>
+                <strong>Emily Rodriguez</strong>
+                <small>Product Manager, HealthTech</small>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">"Their cybersecurity team identified vulnerabilities we didn't even know existed. The comprehensive security framework they implemented gives us complete peace of mind."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="David Park" class="author-img" loading="lazy">
+              <div>
+                <strong>David Park</strong>
+                <small>Security Director, BankSecure</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prevBtn">&#8592;</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn" id="nextBtn">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta" id="cta">
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <div class="cta-bg-images">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80" alt="" class="cta-bg-img" loading="lazy" aria-hidden="true">
+        </div>
+        <h2 class="cta-title">Ready to Transform Your Business?</h2>
+        <p class="cta-desc">Join 150+ enterprises that trust us with their digital transformation journey. Let's build the future together.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-primary btn-large">Schedule a Consultation</a>
+          <a href="#portfolio" class="btn btn-outline btn-large">Explore Case Studies</a>
+        </div>
+        <div class="cta-clients">
+          <span class="cta-clients-label">Trusted by industry leaders</span>
+          <div class="cta-logos">
+            <span class="client-logo-text">TechCorp</span>
+            <span class="client-logo-text">DataFlow</span>
+            <span class="client-logo-text">CloudBase</span>
+            <span class="client-logo-text">AILabs</span>
+            <span class="client-logo-text">SecureNet</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Build <span class="gradient-text">Something Great</span></h2>
+        <p class="section-desc">Ready to transform your business with cutting-edge technology? Reach out and let's make it happen.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-info-item">
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <h4>Email Us</h4>
+              <p>hello@nexgenit.com</p>
+              <p>support@nexgenit.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">&#9742;</div>
+            <div>
+              <h4>Call Us</h4>
+              <p>+1 (555) 123-4567</p>
+              <p>+1 (555) 987-6543</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">&#9873;</div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>123 Innovation Drive, Suite 400</p>
+              <p>San Francisco, CA 94105</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Twitter">X</a>
+            <a href="#" class="social-link" aria-label="GitHub">GH</a>
+            <a href="#" class="social-link" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" data-aos="fade-left">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+              <span class="form-focus"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+              <span class="form-focus"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <span class="form-focus"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+            <span class="form-focus"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loader"></span>
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">&#9670;</span>
+            <span class="logo-text">NexGen<span class="logo-accent">IT</span></span>
+          </a>
+          <p>Empowering businesses through innovative technology solutions. We turn complex challenges into elegant digital experiences.</p>
+          <div class="footer-newsletter">
+            <h4>Stay Updated</h4>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Enter your email">
+              <button type="submit">&#8594;</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+            <li><a href="#">Cloud Solutions</a></li>
+            <li><a href="#">AI & Automation</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">Data Analytics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Status</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NexGen IT Solutions. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+      <div class="footer-credit">
+        <p>This Frontend Web Development competition project was assigned by Destination Career and successfully completed by Rajeshwari S. a final-year (7th Semester) B.E. Information Science and Engineering student at SEA College of Engineering.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="js/particles.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
