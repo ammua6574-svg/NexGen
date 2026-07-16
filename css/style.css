@@ -1,4 +1,4 @@
-/* ===== CSS Variables & Theme ===== */
+
 :root {
   --primary: #6C63FF;
   --primary-dark: #5A52E0;
@@ -47,7 +47,7 @@
   --gradient-hero: linear-gradient(135deg, #f0f0f8 0%, #e8e8ff 50%, #f0f0f8 100%);
 }
 
-/* ===== Reset & Base ===== */
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -82,7 +82,7 @@ img {
   display: block;
 }
 
-/* ===== Custom Cursor ===== */
+
 .cursor-dot {
   width: 8px;
   height: 8px;
@@ -108,7 +108,6 @@ img {
   opacity: 0.5;
 }
 
-/* ===== Preloader ===== */
 .preloader {
   position: fixed;
   inset: 0;
@@ -156,7 +155,7 @@ img {
   animation: loader-slide 1.2s ease-in-out infinite;
 }
 
-/* ===== Utility Classes ===== */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -207,7 +206,7 @@ img {
   background-clip: text;
 }
 
-/* ===== Buttons ===== */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -251,7 +250,7 @@ img {
   font-size: 1.1rem;
 }
 
-/* ===== Navigation ===== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -389,7 +388,7 @@ img {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* ===== Hero Section ===== */
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -399,7 +398,7 @@ img {
   background: var(--gradient-hero);
 }
 
-/* Animated Mesh Gradient */
+
 .hero-mesh-bg {
   position: absolute;
   inset: 0;
@@ -440,7 +439,7 @@ img {
   height: 500px;
 }
 
-/* Video Background */
+
 .hero-video-bg {
   position: absolute;
   inset: 0;
@@ -462,7 +461,6 @@ img {
   opacity: 0.6;
 }
 
-/* Colorful Floating Orbs */
 .hero-orbs {
   position: absolute;
   inset: 0;
@@ -617,8 +615,6 @@ img {
   margin: 0 auto 32px;
   line-height: 1.7;
 }
-
-/* Hero Showcase Images */
 .hero-showcase {
   display: flex;
   justify-content: center;
@@ -704,7 +700,7 @@ img {
   background: rgba(108,99,255,0.1);
 }
 
-/* Hero Stats */
+
 .hero-stats {
   display: flex;
   justify-content: center;
@@ -841,7 +837,6 @@ img {
   animation: scroll-move 2s ease-in-out infinite;
 }
 
-/* ===== About Section ===== */
 .about {
   background: var(--bg-secondary);
 }
@@ -1054,7 +1049,7 @@ img {
   transition: width 1.5s ease;
 }
 
-/* ===== Services Section ===== */
+
 .services {
   background: var(--bg-primary);
 }
@@ -1151,7 +1146,7 @@ img {
   gap: 8px;
 }
 
-/* ===== Team Section ===== */
+
 .team {
   background: var(--bg-secondary);
 }
@@ -1253,7 +1248,7 @@ img {
   line-height: 1.6;
 }
 
-/* ===== Portfolio Section ===== */
+
 .portfolio {
   background: var(--bg-primary);
 }
@@ -1360,7 +1355,7 @@ img {
   transform: rotate(45deg);
 }
 
-/* ===== Tech Stack Section ===== */
+
 .tech {
   background: var(--bg-secondary);
 }
@@ -1402,7 +1397,7 @@ img {
   color: var(--text-secondary);
 }
 
-/* ===== Testimonials Section ===== */
+
 .testimonials {
   background: var(--bg-primary);
 }
@@ -1525,7 +1520,6 @@ img {
   border-radius: 4px;
 }
 
-/* ===== CTA Section ===== */
 .cta {
   background: var(--bg-secondary);
   text-align: center;
@@ -1609,7 +1603,7 @@ img {
   letter-spacing: 2px;
 }
 
-/* ===== Brands Section ===== */
+
 .brands {
   background: var(--bg-primary);
 }
@@ -1658,7 +1652,7 @@ img {
   text-align: center;
 }
 
-/* ===== Contact Section ===== */
+
 .contact {
   background: var(--bg-primary);
 }
@@ -1739,7 +1733,7 @@ img {
   color: #fff;
 }
 
-/* Contact Form */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -1961,7 +1955,7 @@ img {
   color: var(--text-primary);
 }
 
-/* ===== Footer Credit ===== */
+
 .footer-credit {
   padding: 40px 0;
   border-top: 1px solid var(--border-color);
@@ -2040,7 +2034,7 @@ img {
 .credit-emojis span:nth-child(9) { animation-delay: 1.6s; }
 .credit-emojis span:nth-child(10) { animation-delay: 1.8s; }
 
-/* ===== Back to Top ===== */
+
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -2072,7 +2066,7 @@ img {
   box-shadow: 0 8px 30px rgba(108,99,255,0.4);
 }
 
-/* ===== Floating Animation ===== */
+
 .floating {
   animation: float 6s ease-in-out infinite;
 }

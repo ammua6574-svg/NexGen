@@ -1,4 +1,4 @@
-/* ===== Keyframes ===== */
+
 
 @keyframes pulse-logo {
   0%, 100% { transform: scale(1); opacity: 1; }
@@ -116,7 +116,6 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== AOS-like Scroll Animations ===== */
 [data-aos] {
   opacity: 0;
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -147,21 +146,18 @@
   transform: scale(0.8);
 }
 
-/* ===== Hover Animations ===== */
-
-/* 3D Tilt Effect */
 .service-card {
   transform-style: preserve-3d;
   perspective: 1000px;
 }
 
-/* Glow pulse on interactive elements */
+
 .btn-primary {
   animation: gradient-shift 4s ease infinite;
   background-size: 200% 200%;
 }
 
-/* Tech item hover glow */
+
 .tech-item {
   position: relative;
 }
@@ -182,12 +178,12 @@
   opacity: 0.2;
 }
 
-/* Portfolio item reveal */
+
 .portfolio-item {
   overflow: hidden;
 }
 
-/* Service card shine effect */
+
 .service-card::after {
   content: '';
   position: absolute;
@@ -209,13 +205,13 @@
   transform: rotate(45deg) translateY(-100%);
 }
 
-/* Gradient text animation */
+
 .gradient-text {
   background-size: 200% 200%;
   animation: gradient-shift 4s ease infinite;
 }
 
-/* ===== Page Load Animation ===== */
+
 .preloader.hidden ~ .navbar {
   animation: slideDown 0.6s ease forwards;
 }
@@ -224,7 +220,6 @@
   animation: fadeInUp 0.6s ease forwards;
 }
 
-/* ===== Floating Elements ===== */
 .floating-delay-1 { animation-delay: 0.5s; }
 .floating-delay-2 { animation-delay: 1s; }
 .floating-delay-3 { animation-delay: 1.5s; }
@@ -234,17 +229,17 @@
   animation: fadeInUp 0.6s ease forwards;
 }
 
-/* ===== Smooth Section Reveal ===== */
+
 .section {
   position: relative;
 }
 
-/* ===== Parallax Shapes ===== */
+
 .shape {
   will-change: transform;
 }
 
-/* ===== Filter Animation ===== */
+
 .portfolio-item {
   transition: all 0.5s ease;
 }
@@ -253,17 +248,17 @@
   display: none;
 }
 
-/* ===== Theme Transition ===== */
+
 body, .navbar, .section, .footer, .service-card, .team-card, .tech-item {
   transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* ===== Nav Link Active Indicator ===== */
+
 .nav-link.active {
   color: var(--text-primary);
 }
 
-/* ===== Custom Scrollbar ===== */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -281,13 +276,12 @@ body, .navbar, .section, .footer, .service-card, .team-card, .tech-item {
   background: var(--primary);
 }
 
-/* ===== Selection ===== */
+
 ::selection {
   background: var(--primary);
   color: #fff;
 }
 
-/* ===== Focus Styles ===== */
 :focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;

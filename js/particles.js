@@ -1,4 +1,4 @@
-/* ===== Interactive Particle Network Background ===== */
+
 class ParticleNetwork {
   constructor(canvasId) {
     this.canvas = document.getElementById(canvasId);
