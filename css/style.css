@@ -1963,23 +1963,82 @@ img {
 
 /* ===== Footer Credit ===== */
 .footer-credit {
-  padding: 24px 0;
+  padding: 40px 0;
   border-top: 1px solid var(--border-color);
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-credit-video {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.footer-credit-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.08;
+}
+
+.footer-credit-content {
+  position: relative;
+  z-index: 1;
+}
+
+.credit-badge {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+  animation: pulse-logo 2s ease-in-out infinite;
 }
 
 .footer-credit p {
   color: var(--text-muted);
-  font-size: 0.85rem;
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.8;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 16px;
 }
 
 .footer-credit strong {
   color: var(--primary-light);
   font-weight: 600;
 }
+
+.credit-emojis {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.credit-emojis span {
+  font-size: 1.4rem;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+  cursor: default;
+  transition: transform 0.3s;
+}
+
+.credit-emojis span:hover {
+  transform: scale(1.4);
+}
+
+.credit-emojis span:nth-child(1) { animation-delay: 0s; }
+.credit-emojis span:nth-child(2) { animation-delay: 0.2s; }
+.credit-emojis span:nth-child(3) { animation-delay: 0.4s; }
+.credit-emojis span:nth-child(4) { animation-delay: 0.6s; }
+.credit-emojis span:nth-child(5) { animation-delay: 0.8s; }
+.credit-emojis span:nth-child(6) { animation-delay: 1s; }
+.credit-emojis span:nth-child(7) { animation-delay: 1.2s; }
+.credit-emojis span:nth-child(8) { animation-delay: 1.4s; }
+.credit-emojis span:nth-child(9) { animation-delay: 1.6s; }
+.credit-emojis span:nth-child(10) { animation-delay: 1.8s; }
 
 /* ===== Back to Top ===== */
 .back-to-top {
