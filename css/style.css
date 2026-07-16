@@ -414,9 +414,6 @@ img {
   filter: blur(80px);
   opacity: 0.3;
   animation: mesh-float 15s ease-in-out infinite;
-}
-
-.mesh-gradient {
   background: radial-gradient(circle, #6C63FF, #00D2FF, transparent);
   top: -15%;
   left: -10%;
